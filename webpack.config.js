@@ -1,14 +1,15 @@
 var config = {
-    entry: './main.js',
+    entry: './source/main.js',
 
     output: {
         path:'./',
-        filename: 'index.js',
+        filename: './public/js/main.js',
     },
 
     devServer: {
         inline: true,
-        port: 8080
+        contentBase: "./public",
+        port: 8888
     },
 
     module: {
