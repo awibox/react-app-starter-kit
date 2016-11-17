@@ -1,0 +1,28 @@
+{
+  "name": "bem-builder-react",
+  "version": "1.0.0",
+  "description": "Module bundler for react",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awibox/bem-builder-react.git"
+  },
+  "keywords": [
+    "react",
+    "bem",
+    "webpack"
+  ],
+  "author": "Arkhipov Andrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awibox/bem-builder-react/issues"
+  },
+  "homepage": "https://github.com/awibox/bem-builder-react#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
