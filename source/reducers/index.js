@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 // Reducers
-import githubReducer from './github-reducer';
+import reposReducer from './repos-reducer';
 
 // Combine Reducers
 var reducers = combineReducers({
-    githubState: githubReducer
+    reposState: reposReducer,
 });
 
 export default reducers;
