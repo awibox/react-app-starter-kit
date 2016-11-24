@@ -1,3 +1,5 @@
+var path = require('path');
+
 var config = {
     entry: './source/main.js',
     output: {
@@ -8,7 +10,9 @@ var config = {
 
     devServer: {
         contentBase: "./public",
-        port: 8888
+        port: 8888,
+        historyApiFallback: true,
+        publicPath: '/'
     },
 
     module: {
