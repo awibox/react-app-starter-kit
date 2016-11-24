@@ -1,15 +1,27 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import Gihub from '../github/github';
+import * as githubApi from '../../api/github-api';
+import store from '../../store';
 
-class About extends React.Component {
-    render() {
+const UserListContainer = React.createClass({
+
+    componentDidMount: function() {
+        githubApi.getUserInfo();
+    },
+
+    render: function() {
         return (
-            <div>
-                <div>
-                    <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam doloremque ipsa laborum magnam non voluptatum! At beatae dicta error explicabo hic molestias natus necessitatibus, quae quas quia quos repudiandae vero.</p>
-                </div>
-            </div>
+            <Github />
         );
     }
-}
-export default About;
+
+});
+
+const mapStateToProps = function(store) {
+    return {
+        github: store.githubState
+    };
+};
+
+export default connect(mapStateToProps)(UserListContainer);
