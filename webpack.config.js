@@ -21,9 +21,10 @@ var config = {
                 query: {
                     presets: ['es2015', 'react']
                 }
+
             }
         ]
     }
-}
+};
 
 module.exports = config;
