@@ -1,17 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router';
+import Menu from './menu';
 
 const MainLayout = React.createClass({
     render: function() {
         return (
             <div className="app">
                 <header className="primary-header"></header>
-                <aside className="primary-aside">
-                    <ul>
-                        <li><Link to="/" activeClassName="active">Home</Link></li>
-                        <li><Link to="/repos" activeClassName="active">Repos</Link></li>
-                    </ul>
-                </aside>
+                <Menu />
                 <main>
                     {this.props.children}
                 </main>
