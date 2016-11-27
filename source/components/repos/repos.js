@@ -12,7 +12,7 @@ const ReposListContainer = React.createClass({
 
     render: function() {
         return (
-            <ReposList users={this.props.users} />
+            <ReposList repos={this.props.repos} />
         );
     }
 
@@ -20,7 +20,7 @@ const ReposListContainer = React.createClass({
 
 const mapStateToProps = function(store) {
     return {
-        users: store.reposState.repos
+        repos: store.reposState.repos
     };
 };
 

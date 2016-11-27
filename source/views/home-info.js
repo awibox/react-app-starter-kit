@@ -7,12 +7,12 @@ export default function(props) {
     return (
         <div className="data-list">
 
-            {props.repos.map(repo => {
+            {props.users.map(user => {
 
                 return (
-                    <div key={repo.id} className="data-list-item">
+                    <div key={user.id} className="data-list-item">
                         <div className="details">
-                            {repo.name} - {repo.description}
+                            {user.name} - {user.description}
                         </div>
                     </div>
                 );
