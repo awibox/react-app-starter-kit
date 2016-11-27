@@ -1,4 +1,5 @@
-var path = require('path');
+var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
     entry: './source/main.js',
@@ -26,9 +27,16 @@ var config = {
                     presets: ['es2015', 'react']
                 }
 
+            },
+            {
+                test:   /\.(sass|scss)$/,
+                loader: ExtractTextPlugin.extract('css?sourceMap!autoprefixer?browsers=last 15 versions!sass?sourceMap')
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('css/styles.css')
+    ],
 };
 
 module.exports = config;

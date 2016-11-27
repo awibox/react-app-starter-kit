@@ -5,13 +5,13 @@ import { Link } from 'react-router';
 const Header = React.createClass({
     render: function() {
         return (
-            <header className="primary-header">
-                <aside className="primary-aside">
-                    <ul>
-                        <li><Link to="/" activeClassName="active">Home</Link></li>
-                        <li><Link to="/repos" activeClassName="active">Repos</Link></li>
-                    </ul>
-                </aside>
+            <header className="header">
+                <div className="wrapper">
+                    <aside className="header__menu">
+                        <Link className="header__menu-item" to="/" activeClassName="header__menu-item_active">Home</Link>
+                        <Link className="header__menu-item" to="/repos" activeClassName="header__menu-item_active">Repos</Link>
+                    </aside>
+                </div>
             </header>
         );
     }
