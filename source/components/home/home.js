@@ -1,13 +1,27 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import HomeInfo from '../../views/home-info';
+import * as homeApi from '../../api/home-api';
+import store from '../../store';
 
-class Home extends React.Component {
-    render() {
+const HomeInfoContainer = React.createClass({
+
+    componentDidMount: function() {
+        homeApi.getHome();
+    },
+
+    render: function() {
         return (
-            <div>
-                <h2>Home</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis corporis dolore dolorem iure libero magnam reprehenderit. Adipisci atque consequatur debitis dolor incidunt inventore iste maxime pariatur rem, repellat tenetur!</p>
-            </div>
+            <HomeInfo home={this.props.home} />
         );
     }
-}
-export default Home;
+
+});
+
+const mapStateToProps = function(store) {
+    return {
+        home: store.homeState.home
+    };
+};
+
+export default connect(mapStateToProps)(HomeInfoContainer);
