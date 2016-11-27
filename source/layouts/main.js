@@ -1,12 +1,11 @@
 import React from 'react';
-import Menu from './menu';
+import Header from './../components/header/header';
 
 const MainLayout = React.createClass({
     render: function() {
         return (
             <div className="app">
-                <header className="primary-header"></header>
-                <Menu />
+                <Header />
                 <main>
                     {this.props.children}
                 </main>
