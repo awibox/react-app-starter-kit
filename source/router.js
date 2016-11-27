@@ -10,8 +10,8 @@ import Repos from './components/repos/repos';
 
 export default (
     <Router history={browserHistory}>
-        <Route path="/" component={MainLayout}>
-            <IndexRoute component={Home} />
+        <Route component={MainLayout}>
+            <Route path="/" component={Home} />
             <Route path="repos" component={Repos} />
         </Route>
     </Router>

@@ -8,7 +8,9 @@ const MainLayout = React.createClass({
             <div className="app">
                 <Header />
                 <main>
-                    {this.props.children}
+                    <div className="wrapper">
+                        {this.props.children}
+                    </div>
                 </main>
             </div>
         );
