@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 // Layouts
-import MainLayout from './layouts/main/main';
+import MainLayout from './layouts/main';
 
 // Pages
 import Home from './components/home/home';

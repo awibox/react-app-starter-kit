@@ -12,7 +12,7 @@ export default function(props) {
                 return (
                     <div key={user.id} className="data-list-item">
                         <div className="details">
-                            {user.name}
+                            {user.name} - {user.description}
                         </div>
                     </div>
                 );
