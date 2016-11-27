@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var NODE_ENV = process.env.NODE_ENV || 'development';
 
 var config = {
     entry: './source/main.js',
@@ -15,7 +16,7 @@ var config = {
         historyApiFallback: true,
         publicPath: '/'
     },
-
+    devtool: NODE_ENV == 'development' ? "inline-source-map" : null,
     module: {
         loaders: [
             {
