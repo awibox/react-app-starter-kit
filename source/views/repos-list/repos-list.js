@@ -7,9 +7,7 @@ export default function(props) {
     console.log('repos', props);
     return (
         <div className="repos-list">
-
             {props.repos.map(repo => {
-                console.log(repo);
                 let languageStyle;
                 if (repo.language === 'JavaScript') {
                     languageStyle = {
@@ -22,7 +20,7 @@ export default function(props) {
                 }
                 return (
                     <div key={repo.id} className="repos-list__item">
-                        <div className="repos-list__name">{repo.name}</div>
+                        <Link href={repo.html_url} className="repos-list__name">{repo.name}</Link>
                         <div className="repos-list__desc">{repo.description}</div>
                         <div className="repos-list__panel">
                             <div className="repos-list__language"><i className="fa fa-circle"  style={languageStyle}></i> {repo.language}</div>
