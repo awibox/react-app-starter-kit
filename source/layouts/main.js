@@ -7,7 +7,7 @@ const MainLayout = React.createClass({
         return (
             <div className="app">
                 <Header />
-                <main>
+                <main className="content">
                     <div className="wrapper">
                         {this.props.children}
                     </div>
