@@ -5,4 +5,14 @@
     border-radius: 3px;
     border: 1px #e5e5e5 solid;
   }
+  &__name {
+    color: #4078c0;
+    font-weight: 600;
+  }
+  &__desc {
+    font-size: 12px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    color: #767676
+  }
 }
