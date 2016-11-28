@@ -7,12 +7,27 @@
   }
   &__name {
     color: #4078c0;
-    font-weight: 600;
+    font-size: 16px;
   }
   &__desc {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 16px;
     margin-top: 8px;
+    color: #767676
+  }
+  &__panel {
+    &:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+  }
+  &__language {
+    float: left;
+    color: #767676
+  }
+  &__stars {
+    float: right;
     color: #767676
   }
 }

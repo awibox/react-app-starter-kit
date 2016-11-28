@@ -14,8 +14,11 @@ export default function(props) {
                     <div key={repo.id} className="repos-list__item">
                         <div className="repos-list__name">{repo.name}</div>
                         <div className="repos-list__desc">{repo.description}</div>
-                        <div className="repos-list__languare">JavaScript</div>
-                        <div className="repos-list__stars">8</div>
+                        <div className="repos-list__panel">
+                            <div className="repos-list__language">Language: JavaScript</div>
+                            <div className="repos-list__stars">Stars: {repo.stargazers_count}</div>
+                        </div>
+
                     </div>
                 );
 
