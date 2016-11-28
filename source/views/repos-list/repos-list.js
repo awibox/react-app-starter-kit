@@ -9,16 +9,25 @@ export default function(props) {
         <div className="repos-list">
 
             {props.repos.map(repo => {
-
+                console.log(repo);
+                let languageStyle;
+                if (repo.language === 'JavaScript') {
+                    languageStyle = {
+                        color: '#f1e05a'
+                    }
+                } else if (repo.language === 'TypeScript'){
+                    languageStyle = {
+                        color: '#2b7489'
+                    }
+                }
                 return (
                     <div key={repo.id} className="repos-list__item">
                         <div className="repos-list__name">{repo.name}</div>
                         <div className="repos-list__desc">{repo.description}</div>
                         <div className="repos-list__panel">
-                            <div className="repos-list__language">Language: JavaScript</div>
-                            <div className="repos-list__stars">Stars: {repo.stargazers_count}</div>
+                            <div className="repos-list__language"><i className="fa fa-circle"  style={languageStyle}></i> {repo.language}</div>
+                            <div className="repos-list__stars"><i className="fa fa-star" aria-hidden="true"></i> {repo.stargazers_count}</div>
                         </div>
-
                     </div>
                 );
 
