@@ -1,9 +1,15 @@
 .wrapper {
   width: $siteWidth;
   margin: 0 auto;
+  box-sizing: border-box;
   &:after {
     display: block;
     content: "";
     clear: both;
+  }
+}
+.content {
+  .wrapper {
+    padding: $indent;
   }
 }
