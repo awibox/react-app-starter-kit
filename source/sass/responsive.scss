@@ -1,0 +1,10 @@
+@media screen and (max-width:960px) {
+  #root {
+    .wrapper {
+      width: 100%;
+    }
+    .home-info__title-version {
+      display: none;
+    }
+  }
+}
