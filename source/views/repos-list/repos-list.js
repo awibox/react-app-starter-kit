@@ -24,8 +24,9 @@ export default function(props) {
                         <div className="repos-list__github-ico"> <i className="fa fa-github" aria-hidden="true"></i></div>
                         <div className="repos-list__desc">{repo.description}</div>
                         <div className="repos-list__panel">
-                            <div className="repos-list__language"><i className="fa fa-circle"  style={languageStyle}></i> {repo.language}</div>
-                            <div className="repos-list__stars"><i className="fa fa-star" aria-hidden="true"></i> {repo.stargazers_count}</div>
+                            <div className="repos-list__property repos-list__property_language"><i className="fa fa-circle"  style={languageStyle}></i> {repo.language}</div>
+                            <div className="repos-list__property repos-list__property_size"><i className="fa fa-file-archive-o"></i> {(repo.size / 1024).toFixed(2)} mb</div>
+                            <div className="repos-list__property repos-list__property_stars"><i className="fa fa-star" aria-hidden="true"></i> {repo.stargazers_count}</div>
                         </div>
                     </div>
                 );

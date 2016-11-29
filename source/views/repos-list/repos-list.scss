@@ -22,13 +22,22 @@
       display: block;
     }
   }
-  &__language {
-    float: left;
-    color: #767676
-  }
-  &__stars {
-    float: right;
-    color: #767676
+
+  &__property {
+    float:left;
+    color: #767676;
+    .fa {
+      margin-right: 5px;
+    }
+    &_stars {
+      float: right;
+      .fa {
+        margin-right: 0;
+      }
+    }
+    &_size {
+      margin-left: 30px;
+    }
   }
   &__github-ico {
     float: right;
