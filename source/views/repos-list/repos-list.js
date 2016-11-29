@@ -21,6 +21,7 @@ export default function(props) {
                 return (
                     <div key={repo.id} className="repos-list__item">
                         <Link href={repo.html_url} className="repos-list__name">{repo.name}</Link>
+                        <div className="repos-list__github-ico"> <i className="fa fa-github" aria-hidden="true"></i></div>
                         <div className="repos-list__desc">{repo.description}</div>
                         <div className="repos-list__panel">
                             <div className="repos-list__language"><i className="fa fa-circle"  style={languageStyle}></i> {repo.language}</div>
