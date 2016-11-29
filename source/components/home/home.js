@@ -8,11 +8,12 @@ const HomeInfoContainer = React.createClass({
 
     componentDidMount: function() {
         homeApi.getHome();
+        homeApi.getReleases();
     },
 
     render: function() {
         return (
-            <HomeInfo home={this.props.home} />
+            <HomeInfo home={this.props.home} releases={this.props.releases} />
         );
     }
 
@@ -20,7 +21,8 @@ const HomeInfoContainer = React.createClass({
 
 const mapStateToProps = function(store) {
     return {
-        home: store.homeState.home
+        home: store.homeState.home,
+        releases: store.homeState.releases
     };
 };
 

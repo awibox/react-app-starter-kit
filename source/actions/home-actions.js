@@ -6,3 +6,9 @@ export function getHomeSuccess(home) {
     home
   };
 }
+export function getHomeReleases(releases) {
+  return {
+    type: types.GET_HOME_RELEASES,
+    releases
+  };
+}
