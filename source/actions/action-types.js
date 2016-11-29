@@ -1,3 +1,4 @@
 // Users
 export const GET_REPOS_SUCCESS = 'GET_REPOS_SUCCESS';
 export const GET_HOME_SUCCESS = 'GET_HOME_SUCCESS';
+export const GET_HOME_RELEASES = 'GET_HOME_RELEASES';
