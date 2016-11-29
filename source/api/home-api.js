@@ -1,6 +1,6 @@
 import axios from 'axios';
 import store from '../store';
-import { getHomeSuccess} from '../actions/home-actions';
+import { getHomeSuccess, getHomeReleases} from '../actions/home-actions';
 
 export function getHome() {
     console.log('getHome сработал');
@@ -8,6 +8,15 @@ export function getHome() {
         .then(response => {
             console.log(response);
             store.dispatch(getHomeSuccess(response.data));
+            return response;
+        });
+}
+export function getReleases() {
+    console.log('getReleases сработал');
+    return axios.get('https://api.github.com/repos/BEM-builder/ES6-app-starter-kit/releases')
+        .then(response => {
+            console.log(response);
+            store.dispatch(getHomeReleases(response.data));
             return response;
         });
 }
