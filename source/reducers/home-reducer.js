@@ -1,7 +1,8 @@
 import * as types from '../actions/action-types';
 
 const initialState = {
-  home: []
+  home: [],
+  releases: []
 };
 
 const homeReducer = function(state = initialState, action) {
@@ -10,7 +11,8 @@ const homeReducer = function(state = initialState, action) {
 
     case types.GET_HOME_SUCCESS:
       return Object.assign({}, state, { home: action.home });
-
+    case types.GET_HOME_RELEASES:
+      return Object.assign({}, state, { releases: action.releases });
   }
 
   return state;
