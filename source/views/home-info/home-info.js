@@ -30,7 +30,7 @@ export default function (props) {
           </div>
         </h1>
         <div className="home-info__text">{props.home.description}</div>
-        <p><Link className="btn btn_lg btn_success" href={props.home.html_url}>Download</Link></p>
+        <p><Link className="btn btn_lg btn_success" href={props.home.html_url}>Download with Github</Link></p>
       </div>
     </div>
   );
