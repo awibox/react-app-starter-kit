@@ -8,6 +8,8 @@ const Header = React.createClass({
         return (
             <header className="header">
                 <div className="wrapper">
+                    <div className="header__logo"></div>
+                    <div className="header__name">BEM-builder</div>
                     <aside className="header__menu">
                         <Link className="header__menu-item" to="/" activeClassName="header__menu-item_active">About</Link>
                         <Link className="header__menu-item" to="/repos" activeClassName="header__menu-item_active">Repositories</Link>
