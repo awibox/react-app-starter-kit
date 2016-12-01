@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ReposList from '../../views/repos-list/repos-list';
-import * as reposApi from '../../api/repos-api';
-import store from '../../store';
+import ReposList from '../components/repos-list/repos-list';
+import * as reposApi from '../api/repos-api';
+import store from '../store';
 
 const ReposListContainer = React.createClass({
 

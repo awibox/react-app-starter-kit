@@ -5,8 +5,8 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import MainLayout from './layouts/main';
 
 // Pages
-import Home from './components/home/home';
-import Repos from './components/repos/repos';
+import Home from './pages/home';
+import Repos from './pages/repos';
 
 export default (
     <Router history={browserHistory}>
