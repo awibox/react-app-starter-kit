@@ -13,7 +13,7 @@ export function getHome() {
 }
 export function getReleases() {
     console.log('getReleases сработал');
-    return axios.get('https://api.github.com/repos/BEM-builder/ES6-app-starter-kit/releases')
+    return axios.get('https://api.github.com/repos/BEM-builder/react-app-starter-kit/releases')
         .then(response => {
             console.log(response);
             store.dispatch(getHomeReleases(response.data));
