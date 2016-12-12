@@ -1,6 +1,6 @@
 import axios from 'axios';
 import store from '../store';
-import { getHomeSuccess, getHomeReleases} from '../actions/home-actions';
+import { getHomeSuccess, getHomeReleases} from '../actions/action-functions';
 
 export function getHome() {
     console.log('getHome сработал');

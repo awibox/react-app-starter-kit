@@ -1,6 +1,6 @@
 import axios from 'axios';
 import store from '../store';
-import { getAuthorSuccess} from '../actions/author-actions';
+import { getAuthorSuccess} from '../actions/action-functions';
 
 export function getAuthor() {
     console.log('getAuthor сработал');

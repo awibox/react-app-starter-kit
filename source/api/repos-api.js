@@ -1,6 +1,6 @@
 import axios from 'axios';
 import store from '../store';
-import { getReposSuccess} from '../actions/repos-actions';
+import { getReposSuccess} from '../actions/action-functions';
 
 export function getRepos() {
     console.log('getRepos сработал');
