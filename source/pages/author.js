@@ -20,7 +20,7 @@ const AuthorInfoContainer = React.createClass({
 
 const mapStateToProps = function(store) {
   return {
-    author: store.authorState.author
+    author: store.author
   };
 };
 

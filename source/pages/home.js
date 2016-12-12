@@ -20,9 +20,10 @@ const HomeInfoContainer = React.createClass({
 });
 
 const mapStateToProps = function(store) {
+    console.log(store);
     return {
-        home: store.homeState.home,
-        releases: store.homeState.releases
+        home: store.home,
+        releases: store.releases
     };
 };
 

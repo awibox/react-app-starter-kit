@@ -20,7 +20,7 @@ const ReposListContainer = React.createClass({
 
 const mapStateToProps = function(store) {
     return {
-        repos: store.reposState.repos
+        repos: store.repos
     };
 };
 
