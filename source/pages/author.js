@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import AuthorInfo from '../components/author-info/author-info';
-import * as authorApi from '../api/author-api';
+import * as authorApi from '../api/github-api';
 import store from '../store';
 
 const AuthorInfoContainer = React.createClass({

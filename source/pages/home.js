@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import HomeInfo from '../components/home-info/home-info';
-import * as homeApi from '../api/home-api';
+import * as homeApi from '../api/github-api';
 import store from '../store';
 
 const HomeInfoContainer = React.createClass({
