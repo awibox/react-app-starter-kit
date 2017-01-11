@@ -15,6 +15,7 @@ const Header = React.createClass({
                         <Link className="header__menu-item" to="/repos" activeClassName="header__menu-item_active">Repositories</Link>
                         <Link className="header__menu-item" to="/author" activeClassName="header__menu-item_active">Author</Link>
                     </aside>
+                    <div className="header__menu-mobile"><i className="fa fa-list"></i></div>
                 </div>
             </header>
         );
