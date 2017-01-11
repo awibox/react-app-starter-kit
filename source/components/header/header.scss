@@ -40,5 +40,15 @@ $indent: 15px;
         font-weight: 500;
       }
     }
+    &-mobile {
+      display: none;
+      float: right;
+      font-size: 22px;
+      line-height: 22px;
+      color: #999;
+      padding: 5px 0 4px;
+      margin: 0 20px;
+      cursor: pointer;
+    }
   }
 }
